@@ -1,6 +1,6 @@
-FROM tomcat:8.5.30-jre8-alpine
+FROM tomcat:9.0.37
 
-RUN apk add --no-cache mysql-client curl
+# RUN apk add --no-cache mysql-client curl
 
 ADD ./server.xml /usr/local/tomcat/conf/server.xml
 
